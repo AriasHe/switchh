@@ -220,12 +220,12 @@ void aterrado(){
 } 
 
 void passar_valores_c(int valor){
-    digitalWrite(A0, valor & (1 << 5)  ? 1 : 0);
-    digitalWrite(A1, valor & (1 << 4)  ? 1 : 0);
-    digitalWrite(A2, valor & (1 << 3)  ? 1 : 0);
-    digitalWrite(A3, valor & (1 << 2)  ? 1 : 0);
-    digitalWrite(A4, valor & (1 << 1)  ? 1 : 0);
-    digitalWrite(A5, valor & (1 << 0)  ? 1 : 0);
+    digitalWrite(A5, valor & (1 << 5)  ? 1 : 0);
+    digitalWrite(A4, valor & (1 << 4)  ? 1 : 0);
+    digitalWrite(A3, valor & (1 << 3)  ? 1 : 0);
+    digitalWrite(A2, valor & (1 << 2)  ? 1 : 0);
+    digitalWrite(A1, valor & (1 << 1)  ? 1 : 0);
+    digitalWrite(A0, valor & (1 << 0)  ? 1 : 0);
 
   
 }
