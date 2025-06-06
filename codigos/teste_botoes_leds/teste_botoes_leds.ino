@@ -85,7 +85,7 @@ void loop() {
   if (Serial.available() > 0) {
      cmd = Serial.read();    
    }else{
-        cmd =  (digitalRead(23)==1  ? 11 : digitalRead(25)==1  ? 12 :digitalRead(29)==1  ? 14 : digitalRead(31)==1  ? 15 : digitalRead(33)==1  ? 16 : digitalRead(35)==1  ? 21 : digitalRead(37)==1  ? 22 : digitalRead(39)==1  ? 23 : digitalRead(41)==1  ? 24 : digitalRead(43)==1  ? 25 : digitalRead(45)==1  ? 26 : 0 );
+        cmd =  (digitalRead(23)==1  ? 11 : digitalRead(25)==1  ? 12 : digitalRead(27)==1  ? 13 digitalRead(29)==1  ? 14 : digitalRead(31)==1  ? 15 : digitalRead(33)==1  ? 16 : digitalRead(35)==1  ? 21 : digitalRead(37)==1  ? 22 : digitalRead(39)==1  ? 23 : digitalRead(41)==1  ? 24 : digitalRead(43)==1  ? 25 : digitalRead(45)==1  ? 26 : 0 );
      
    }
    if(cmd!=0){
